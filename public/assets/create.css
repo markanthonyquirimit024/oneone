@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c0d06;
+  }
+  
+  .container {
+    position: absolute;
+    right: 30rem; /* Adjusted to make it stick to the right edge */
+    width: 50%;
+    margin-top: 5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    max-width: 700px; /* Added max-width for responsiveness */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  #toast-container {
+    z-index: 10000; /* Set a high z-index value to ensure it appears above other elements */
+}
+
+.toastmessage {
+    position: absolute;
+    top: 85px;
+    right:400px;
+    z-index: 10001; /* Set a z-index higher than toastr container to ensure it appears above */
+}
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  .logo-img2{
+    margin-top: 5rem;
+  }
+
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+  }
+  
+input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"]{
+    width: 100%;
+    padding: 5px; /* Adjusted padding for better appearance */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #df6732;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #1c0d06;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(24, 2, 2, 0.822); /* Add drop shadow */
+}
+
+.navbar h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+#bookingNav{
+    background-color: rgb(204, 72, 58);
+    border-radius: 20px;
+
+}
+  
+
+  
